@@ -11,14 +11,18 @@ public class Team {
     public List<Member> getMembers() {
         return this.members;
     }
+    public void retainMembers(ArrayList<Member> members) {
+        this.members.retainAll(members);
+    }
     //класс участника
-    class Member {
+    class Member implements Contest.ContestMember {
         final private String name;
         private int score = 0;
         Member(String name) {
             this.name = name;
         }
               //метод в котором участник выполняем задание
+        @Override
         public void doContest(Contest.Tour tour) {
             Random random = new Random();
             int myResult = random.nextInt(10)+1;

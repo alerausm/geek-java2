@@ -62,7 +62,7 @@ public class Task2 {
         public PhoneBook get(String name) {
             PhoneBook result = new PhoneBook();
             for (Contact contact:this.tailSet(new Contact(name,null))) {
-                if (!contact.getName().equals(name)) break;
+                if (!contact.getName().equalsIgnoreCase(name)) break;
                 result.add(contact);
             }
             return result;

@@ -56,14 +56,7 @@ public class Task2 {
 
     public static class PhoneBook extends TreeSet<PhoneBook.Contact> {
         public PhoneBook() {
-            super(new Comparator<Contact>() {
-                @Override
-                public int compare(Contact o1, Contact o2) {
-                    int compare = o1.getName().compareTo(o2.getName());
-                    if (compare==0) compare = o1.getPhone().compareTo(o2.getPhone());
-                    return compare;
-                }
-            });
+            super(Comparator.comparing(Contact::getName,String.CASE_INSENSITIVE_ORDER).thenComparing(Contact::getPhone,String.CASE_INSENSITIVE_ORDER));
         }
 
         public PhoneBook get(String name) {

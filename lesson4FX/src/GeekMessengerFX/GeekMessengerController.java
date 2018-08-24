@@ -50,7 +50,7 @@ public class GeekMessengerController implements GeekMessengerModel.OnGeekMesseng
         webEngine = webView.getEngine();
         webEngine.setJavaScriptEnabled(true);
         webEngine.setUserStyleSheetLocation(getClass().getResource("style.css").toString());
-        webEngine.loadContent("<!DOCTYPE html></style></head><body onload='toBottom()'><div id='content'></div></body></html>");
+        webEngine.loadContent("<!DOCTYPE html></style></head><body'><div id='content'></div></body></html>");
     }
 
     @Override

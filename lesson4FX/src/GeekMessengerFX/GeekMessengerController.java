@@ -3,7 +3,6 @@ package GeekMessengerFX;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
@@ -24,8 +23,7 @@ public class GeekMessengerController implements GeekMessengerModel.OnGeekMesseng
     private WebEngine webEngine;
     @FXML
     Button sendButton;
-    @FXML
-    ScrollPane scrollPane;
+
 
     @FXML
     TextField inputTextField;

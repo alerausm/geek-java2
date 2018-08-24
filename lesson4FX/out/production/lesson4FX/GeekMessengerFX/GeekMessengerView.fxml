@@ -8,11 +8,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GeekMessengerFX.GeekMessengerController">
    <center>
-      <ScrollPane fx:id="scrollPane" prefHeight="390.0" prefWidth="400.0" BorderPane.alignment="CENTER">
-         <content>
             <WebView fx:id="webView" prefHeight="380.0" prefWidth="400.0"/>
-         </content>
-      </ScrollPane>
    </center>
    <bottom>
       <BorderPane BorderPane.alignment="BOTTOM_CENTER">

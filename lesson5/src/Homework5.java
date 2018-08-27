@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * Java 2. Homework 5
  * @author A.Usmanov
